@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>  
+    <h1>PENJUMLAHAN BILANGAN</h1>
+    <div>
+        <table>
+            <tr>
+                <label for="first"> Bilangan Pertama: </label>
+            </tr>
+            <input type="text" name="first" id="first">
+
+            <tr>
+               <label for="sec"> Bilangan Kedua: </label> 
+            </tr>
+            <input type="text" name="sec" id="sec">
+
+            <p></p>
+            <td><button onclick="PENJUMLAHAN()">Jumlahkan</button></td>
+            <td><button onclick="Reset()">Ulang</button></td>
+        </table>
+    </div>
+
+    <script>
+
+        function PENJUMLAHAN(){
+            var first = parseFloat(document.getElementById("first").value);
+            var sec = parseFloat(document.getElementById("sec").value);
+
+            var hasil = first + sec;
+            alert("Hasil penjumlahan =" + hasil);
+
+        }
+
+        function Reset (){
+            document.getElementById("first").value = "";
+            document.getElementById("sec").value = "";
+           
+        }
+    </script>
+    
+</body>
+</html>

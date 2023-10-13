@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <label for="fullname">Nama Lengkap:</label>
+                <p></p>
+                <input type="text" name="fullname" id="fullname">
+
+                <p></p>
+                <label for="Email">Email:</label>
+                <p></p>
+                <input type="text" name="email" id="email">
+
+                <p></p>
+                <label for="alamat">Alamat:</label>
+                <p></p>
+                <textarea name="alamat" id="alamat" cols="21" rows="5 "></textarea>
+
+                <p></p>
+                <td ><button style="background-color: lightskyblue;" onclick="validasi()">Daftar</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+
+        function validasi(){
+        var fullname = document.getElementById("fullname").value;
+        var email = document.getElementById("email").value;
+        var alamat = document.getAnimations("alamat").value;
+
+        if(fullname == ' ' || email == ' '|| alamat == ' '){
+         alert("Semua kolom harus diisi");
+        }else{
+         alert("Berhsail mendaftar");
+        }
+      
+        }
+      
+
+    </script>
+</body>
+</html>
